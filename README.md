@@ -2,17 +2,15 @@
 # Matematik Konferansı Ödeme Sistemi
 
 ## 📌 Proje Açıklaması
-Bu proje, Matematik Konferansı katılımcılarının çevrimiçi ödeme yapmalarını kolaylaştırmak amacıyla geliştirilmiştir. Katılımcılar, konferans kayıtlarını hızlı ve güvenli bir şekilde tamamlayabilir, ödemelerini online olarak gerçekleştirebilir.
+Bu proje, Matematik Konferansı katılımcılarının çevrimiçi ödeme yapmalarını kolaylaştırmak amacıyla geliştirilmiştir. Katılımcılar konferans kayıtlarını hızlı ve güvenli bir şekilde tamamlayabilir, ödemelerini online olarak gerçekleştirebilir.
 
-Uygulama, modern ve kullanıcı dostu bir arayüz sunmak için **.NET 8**, **Blazor** ve **DevExpress** teknolojilerini kullanır. Veri tabanı yönetimi için **MSSQL** tercih edilmiştir; böylece ödemeler güvenli bir şekilde saklanır ve takip edilir.
+Uygulama, .NET 8, Blazor ve DevExpress teknolojileriyle modern ve kullanıcı dostu bir arayüz sunar. Veri tabanı yönetimi için MSSQL tercih edilmiştir; böylece ödemeler güvenli bir şekilde saklanır ve takip edilebilir.
 
-Ödeme süreci, **İş Bankası POS entegrasyonu** ile konferansın **ortak ödeme sayfasında** gerçekleştirilmiştir. Bu sayede kullanıcılar, banka kartları ve kredi kartları ile güvenli bir şekilde ödeme yapabilir. Ödemeler anlık olarak doğrulanır ve sistem üzerinde kaydedilir, böylece adminler ödeme hareketlerini kolayca takip edebilir.
+Ödeme süreci, İş Bankası POS entegrasyonu ile konferansın ortak ödeme sayfasında gerçekleştirilmiştir. Bu entegrasyon sayesinde banka ve kredi kartları ile güvenli ödeme imkânı sağlanmış, ödemeler anlık olarak doğrulanıp sisteme kaydedilmiştir. Ayrıca, hash algoritmaları ile güvenlik artırılmış, banka altyapısındaki değişikliklere uyum sağlanarak tüm entegrasyonlar başarıyla revize edilmiştir.
 
-Uygulamanın kullanıcı arayüzü, katılımcıların kayıt ve ödeme durumlarını liste halinde görmesini sağlar. Ödeme işlemleri başarılı bir şekilde tamamlandığında,sistemde ödeme onayı güncellenir. Ayrıca yönetici paneli üzerinden tüm ödemeler izlenebilir online ve face to face için ödeme yapanların listeleri ayrı ayrı görüntülenebilir.
+Yönetici paneli üzerinden online ve yüz yüze ödeme yapan katılımcıların listeleri ayrı ayrı görüntülenebilir. Ödeme onayları sistemde otomatik güncellenir, raporlama özellikleri sayesinde adminler tüm ödeme hareketlerini kolayca takip edebilir.
 
-Sistem, güvenilir veri yönetimi sağlayacak şekilde tasarlanmıştır. Tüm işlemler MSSQL veritabanına kaydedilir ve log dosyaları aracılığıyla saklanır. Böylece olası aksaklıklar veya hata durumlarında geriye dönük takip yapılabilir.
-
-Modern web standartlarına uygun olarak geliştirilen uygulama, hem teknik bilgisi olan hem de olmayan kullanıcılar tarafından rahatlıkla kullanılabilir. **Blazor Server** ve **C#** ile geliştirilmiş olması, uygulamanın hızlı, güvenilir ve ölçeklenebilir olmasını sağlar. **DevExpress** ve **Bootstrap** entegrasyonu ile zengin ve etkileşimli bir arayüz sunulur.
+Sistem, log yönetimi ve veritabanı prosedürleri ile güvenilir veri işleme sağlar. Olası aksaklık durumlarında geriye dönük takip yapılabilir. Blazor Server ve C# ile geliştirilen yapı hızlı, güvenilir ve ölçeklenebilir bir çözüm sunarken; DevExpress ve Bootstrap entegrasyonu ile zengin ve etkileşimli bir arayüz geliştirilmiştir.
 
 ## ⚙️ Kullanılan Teknolojiler
 - .NET 8  
